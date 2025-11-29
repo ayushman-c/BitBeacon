@@ -1,0 +1,442 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.hero-box
+{
+  display: flex;
+  gap: 10.813vw;
+  background-color: black;
+  padding-bottom: 200px;
+}
+.hero-main-container
+{
+    margin-top: 10.854vw;
+    color: white;
+    margin-left: 9.646vw;
+    font-family: "Inter", sans-serif;
+    padding: 0.781vw;
+    
+}
+.hero-main-container > *
+{
+    margin-top: 1.823vw;
+}
+.yellow-heading
+{
+    font-size: 1.958vw;
+    color: #e3bd26;
+    font-weight: 600;
+}
+.normal-heading
+{
+    font-size: 3.825vw;
+    width: 40.292vw;
+    font-weight: 700;
+}
+.description
+{
+    width: 35.25vw;
+    font-size: 1.238vw;
+    color: rgb(182, 181, 181);
+}
+.buttons
+{
+    display: flex;
+    gap: 1.302vw;
+}
+.explore
+{
+    background-color: #e3bd26;
+    height: 2.904vw;
+    width: 6.65vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.521vw;
+    color: black;
+    font-size: 0.829vw;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    border: 2px solid #e3bd26;
+
+}
+.sign-in
+{
+    height: 2.904vw;
+    width: 6.65vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.521vw;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    font-size: 0.829vw;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+}
+.explore:hover
+{
+    background-color: #f7d756;
+}
+.sign-in:hover
+{
+    border-color: #f7d756;
+    color: #f7d756;
+}
+
+.btc-img
+{
+  margin-top: 15.854vw;
+  padding: 1.042vw;
+  height: 15.625vw;
+  width: 15.625vw;
+  background: url(./../../assets/ChatGPT\ Image\ Nov\ 19\,\ 2025\,\ 01_43_16\ PM.png);
+  background-size: cover;
+}
+
+
+
+
+
+
+@media (max-width: 768px)
+{
+    .hero-main-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 13.417vw;
+        margin-left: 0px;
+    }
+    .hero-box
+    {
+      flex-direction: column;
+      gap: 0;
+    }
+    .hero-animation
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .btc-img
+    {
+      height: 300px;
+      width: 300px;
+      margin-top: 0px;
+      scale: 0.8;
+    }
+    .hero-main-container > *
+    {
+        margin-top: 1.302vw;
+    }
+    .yellow-heading
+    {
+        font-size: 4.546vw;
+    }
+    .normal-heading
+    {
+        font-size: 4.906vw;
+        width: auto;
+    }
+    .description
+    {
+        margin-top: 1.9vw;
+        font-size: 3.204vw;
+        width: 69.083vw;
+        text-align: center;
+    }
+    .buttons
+    {
+        margin-top: 3.906vw;
+        gap: 6.51vw;
+    }
+    .explore,.sign-in
+    {
+        font-size: 1.902vw;
+        height: 5.906vw;
+        width: 17.719vw;
+        border-radius: 1.642vw;
+    }
+    
+    
+}
+
+
+
+.about-container
+{
+    display: flex;
+    align-items: center;
+    background: #353535;
+    padding-left: 9.246vw;
+    gap: 13.813vw;
+    padding-top: 5.208vw;
+    padding-bottom: 5.208vw;
+    width: 100%; 
+}
+.about-img
+{
+    height: 31.042vw;
+    width: 31.042vw;
+    background: url(./../../assets/aboutimg.png);
+    background-size: cover;
+}
+.about-description
+{
+    width: 32.042vw;
+    background-color: #353535;
+}
+.about-description > *
+{
+    background-color: #353535;
+
+}
+.about-heading
+{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 3.225vw;
+    font-weight: 620;
+    margin-bottom: 1.563vw;
+
+}
+.about-details-1,.about-details-2,.about-details-3
+{
+    color: white;
+    font-size: 1.302vw;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 1.563vw;
+        background-color: #353535;
+
+
+}
+.learn-more
+{
+    margin-top: 1.823vw;
+    background-color: #e3bd26;
+    height: 2.904vw;
+    width: 7.95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.521vw;
+    color: black;
+    font-size: 0.829vw;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    border: 2px solid #e3bd26;
+    font-family: "Inter", sans-serif;
+
+}
+.learn-more:hover
+{
+    background-color:#f7d756 ;
+}
+
+@media (max-width: 768px)
+{
+    .about-container
+    {
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 9.115vw;
+        gap: 0px;
+        margin: 0;
+    }
+    .about-img
+    {
+        width: 500px;
+        height: 500px;
+        padding: 0;
+        scale: 0.8;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-heading
+    {
+        text-align: center;
+        font-size: 7.567vw;
+        font-weight: 650;
+        width:max-content;
+    }
+    
+    .detail-container
+    {
+        text-align: center;
+        font-size: 5.025vw;
+        padding-left:3.255vw ;
+        padding-right:3.255vw ;
+    }
+    .detail-og
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .detail-container > *
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.902vw;
+        width: 400px;
+        
+
+    }
+    .learn-more-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .learn-more
+    {
+        height: 6.51vw;
+        width: 20.182vw;
+        font-size: 2.182vw;
+        border-radius: 1.563vw;
+    }
+}
+
+
+
+.roadmap-main-container
+{
+    padding-top: 5.208vw;
+    padding-bottom: 5.208vw;
+    background-color: black;
+    color: whitesmoke;
+    padding-left: 9.246vw;
+    display: flex;
+    align-items: center;
+    gap: 10.997vw;
+}
+.roadmap-heading
+{
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 3.225vw;
+    font-weight: 620;
+    margin-bottom: 1.563vw;
+}
+
+.body-1
+{
+    width: 28.646vw;
+    
+}
+.bullet-1:hover
+{
+    transform: translateX(20px); 
+}
+.bullet-1
+{
+    display: flex;
+    align-items: start;
+    gap: 1.042vw;
+    margin-top: 3.125vw;
+    transition: transform 0.3s ease;
+}
+.tick
+{
+    background-image: url(./../../assets/check.png);
+    height: 2.813vw;
+    width: 2.813vw;
+    background-size: cover;
+    transition: filter 0.3s ease;
+}
+.bullet-1:hover .tick
+{
+filter: invert(79%) sepia(25%) saturate(1304%) hue-rotate(129deg) brightness(96%) contrast(96%);
+}
+.heading-1
+{
+    font-size: 1.458vw;
+    font-weight: 550;
+    font-family: "Inter", sans-serif;
+}
+.desc-1
+{
+    margin-top: 0.365vw;
+    font-family: "Inter", sans-serif;
+    font-size: 0.938vw;
+
+}
+.desc-2
+{
+    color: #B6B5B5;
+    margin-top: 0.625vw;
+    font-size: 1.25vw;
+    font-family: "Inter", sans-serif;
+}
+
+.roadmap-img
+{
+    background: url(./../../assets/roadmap.png);
+    height: 29.667vw;
+    width: 29.667vw;
+    background-size: cover;
+    border-radius: 25px;
+}
+
+@media (max-width: 768px)
+{
+    .roadmap-main-container
+    {
+        flex-direction: column-reverse;
+        padding: 0;
+        padding-top: 7.813vw;
+        padding-bottom: 7.813vw;
+       
+        align-items: flex-start;
+    }
+    .roadmap-img
+    {
+        height: 49.573vw;
+        width: 49.573vw;
+        margin-left: 26.156vw;
+    }
+    .body-1
+    {
+        width: 57.552vw;
+    }
+    .roadmap-heading
+    {
+        font-size: 5.99vw;
+        margin-left: 8.464vw;
+
+    }
+    .tick
+    {
+        height: 4.427vw;
+        width: 4.427vw;
+    }
+    .heading-1
+    {
+        font-size: 3.385vw;
+    }
+    .desc-1
+    {
+        font-size: 2.453vw;
+    }
+    .desc-2
+    {
+        font-size: 2.993vw;
+    }
+    .roadmap-bullets
+    {
+        align-items: flex-start;
+        margin-left: 9.964vw;
+
+    }
+}

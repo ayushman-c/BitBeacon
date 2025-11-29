@@ -1,0 +1,159 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.box
+{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: black;
+}
+.main-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.563vw;
+    padding-bottom: 1.563vw;
+    border-bottom: 2px solid grey;
+    color: white;
+    font-family: "Inter", sans-serif;
+    z-index: 1000;
+
+}
+.logo-name
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33.33vw;
+    gap: 0.521vw;
+        scale: 1.2;
+
+}
+.crypto
+{
+    margin: 0;
+    font-size: 0.938vw;
+}
+.logo-pic
+{
+    background: url(./../../assets/logo-final-draft.png);
+    height: 2.604vw;
+    width: 2.604vw;
+    background-size: cover;
+}
+.name
+{
+    font-size: 1.25vw;
+    font-weight: 650;
+
+} 
+
+.options
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.563vw;
+    font-size: 0.938vw;
+    width: 33.33vw;
+    font-weight: 650;
+    
+}
+
+.options > *
+{
+    padding: 0.521vw 0.521vw;
+    scale: 1.2;
+}
+.home,.services,.about,.road-map
+{
+    color: grey;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+.home:hover,.services:hover,.about:hover,.road-map:hover
+{
+    color: rgb(255, 255, 255);
+    scale: 1.16;
+}
+
+.socials
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33.33vw;
+}
+
+.socials > *
+{
+    padding: 8px ;
+    scale: 0.7;
+}
+
+.twitter
+{
+    height: 1.667vw;
+    width: 1.667vw;
+    background: url(./../../assets/twitter\ \(2\).png);
+    background-size: cover;
+}
+.linkedIn
+{
+    height: 1.667vw;
+    width: 1.667vw;
+    background: url(./../../assets/twitter\ \(2\).png);
+    background-size: cover;
+}
+.insta
+{
+    height: 1.667vw;
+    width: 1.667vw;
+    background: url(./../../assets/twitter\ \(2\).png);
+    background-size: cover;
+}
+
+@media (max-width: 768px)
+{
+    .main-container
+    {
+        height: 7.2vw;
+        width: auto;
+        
+    }
+    .options
+    {
+        gap: 2.604vw;
+        width: 70vw;
+    }
+    .socials
+    {
+        display: none;
+    }
+    .logo-pic
+    {
+        height: 6.71vw;
+        width: 6.71vw;
+    }
+    .name
+    {
+        font-size: 2.683vw;
+    }
+    .crypto
+    {
+        font-size: 1.763vw;
+    }
+    
+    .options
+    {
+        font-size: 10px;
+    }
+    .socials
+    {
+        padding-right: 15px;
+    }
+}

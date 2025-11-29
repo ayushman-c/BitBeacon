@@ -1,0 +1,160 @@
+/* Container */
+.coinbox
+{
+  display: flex;
+  justify-content: center;
+    font-family: "Inter", sans-serif;
+
+}
+.coin {
+  max-width: 1000px;
+  margin: 110px;
+  padding: 15px;
+  border-radius: 16px;
+  color: #f9fafb;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+}
+
+
+/* Loading & error states */
+.coin .loading,
+.coin .error {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.coin .error {
+  color: #f97373;
+}
+
+/* Coin title */
+.coin-name {
+  text-align: center;
+  font-size: 28px;
+  font-family: "Inter", sans-serif;
+  padding: 15px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  margin-bottom: 1rem;
+}
+
+/* Coin image */
+.coin-image {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.75rem;
+}
+
+.coin-image img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: contain;
+  padding: 8px;
+  border: 2px solid #facc15; /* yellow border */
+}
+
+/* Details + chart layout */
+.coin-details {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 2fr);
+  gap: 1.75rem;
+  align-items: flex-start;
+}
+.coin-details-2
+{
+  display: flex;
+  justify-content: center;
+}
+.coin-details-1
+{
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 700;
+  width: 900px;
+  margin: 20px;
+}
+/* Text metrics (left side) */
+.coin-details p {
+  margin: 0.2rem 0;
+  font-size: 0.98rem;
+  line-height: 1.4;
+  color: #e5e7eb;
+}
+
+/* Stronger value styling */
+.coin-details p span {
+  font-weight: 600;
+}
+
+/* Put all <p> in first column, chart in second */
+.coin-details p {
+  grid-column: 1 / 2;
+}
+
+/* Chart wrapper (right side) */
+.coin-chart {
+  grid-column: 2 / 3;
+  min-height: 260px;   
+  width: 900px;
+  padding: 0.5rem;
+  border-radius: 12px;
+  box-sizing: border-box;
+}
+
+/* Optional: heading inside chart (from LineChart component) */
+.coin-chart h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive: stack details + chart on smaller screens */
+@media (max-width: 768px) {
+  .coin {
+    margin-top: 50px;
+    padding: 1.25rem 1.5rem;
+  }
+  .coin-details-2
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .coin-details-1 {
+    flex-direction: column;
+    margin-left:240px ;
+    gap: 20px;
+  }
+
+ 
+  
+  .coin-chart {
+    width: 500px;
+    margin-left: 235px;
+  }
+
+  .coin-image img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .coin {
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+  }
+
+  .coin-name {
+    font-size: 1.5rem;
+  }
+
+  .coin-details p {
+    font-size: 0.9rem;
+  }
+}
