@@ -23,20 +23,28 @@ function Navbar() {
                 <div className="home">Home</div>
                 </Link>
                 </a>
-                <Link to="/services">
-                <div className="services">Services</div>
-                </Link>
+                
                 <a href="#about">
                 <div className="about">About</div>
                 </a>
                 <a href="#roadmap">
                 <div className="road-map">Roadmap</div>
                 </a>
+                <Link to="/services">
+                <div className="services">Services</div>
+                </Link>
             </div>
             <div className="socials">
-                <div className="twitter"></div>
+                <a href='https://x.com/ayushman_hex9' target='main'>
+                <div className="twitter" ></div>
+                </a>
+                <a href='www.linkedin.com/in/ayushman-chakraborty-aaa612364' target='main'>
                 <div className="linkedIn"></div>
-                <div className="insta"></div>
+                </a>
+                <a href='https://github.com/ayushman-c' target='main'>
+                <div className="github"></div>
+                </a>
+                
             </div>
         </div>
     </div>

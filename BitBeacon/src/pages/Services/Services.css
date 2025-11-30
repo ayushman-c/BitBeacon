@@ -5,6 +5,12 @@
     background-color: black;
 }
 
+.service-heading-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .service-heading
 {
     font-size: 3.825vw;

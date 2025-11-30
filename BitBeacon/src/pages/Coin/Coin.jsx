@@ -9,7 +9,7 @@ import CoinLineChart from '../../components/LineChart/LineChart';
 const Coin = () => {
   const { serviceId } = useParams();
   const [coinData, setCoinData] = useState(null);
-  const [chartData, setChartData] = useState([]);   // 🔥 for historical prices
+  const [chartData, setChartData] = useState([]);   // for historical prices
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const { currency } = useContext(CoinContext);
@@ -20,7 +20,7 @@ const Coin = () => {
     const options = {
       method: 'GET',
       headers: { 'x-cg-demo-api-key': 'CG-NA3sHgHcUauv5MRS4YSwBBAh' } // your key
-      // If needed, you can switch to: 'x-cg-api-key'
+      
     };
 
     setLoading(true);
@@ -38,13 +38,13 @@ const Coin = () => {
       const data = await response.json();
       setCoinData(data);
 
-      // 2️⃣ Fetch historical price data (last 7 days)
+      
       const chartUrl = `${baseUrl}/market_chart?vs_currency=${currency.name}&days=7`;
       const chartRes = await fetch(chartUrl, options);
 
       if (chartRes.ok) {
         const chartJson = await chartRes.json();
-        // chartJson.prices: [ [timestamp, price], ... ]
+        
         const formatted = chartJson.prices.map(([timestamp, price]) => {
           const date = new Date(timestamp);
           return {
@@ -70,7 +70,7 @@ const Coin = () => {
 
   useEffect(() => {
     fetchCoinData();
-    // currency.name is used in the chart API (vs_currency)
+    
   }, [serviceId, currency.name]);
 
   if (loading) {
@@ -101,6 +101,8 @@ const Coin = () => {
     <>
     <div className="coinbox">
       <div className="coin">
+
+        <div className="rotationmsg">Please rotate your phone for proper view</div>
       <div className="coin-name"> 
         {coinData.name}
       </div>
@@ -109,9 +111,9 @@ const Coin = () => {
         <img src={coinData.image?.large} alt={coinData.name} />
       </div>
 
-      {/* Additional coin details */}
+      
       {coinData.market_data && (
-        <div className="coin-details">
+        <>
           <div className="coin-details-2">
             <div className="coin-details-1">
           <p>
@@ -134,7 +136,7 @@ const Coin = () => {
           
           <div className="coin-chart-box">
           <div className="coin-chart">
-            {/* 🔥 Recharts Line Chart */}
+            
             <CoinLineChart
               data={chartData}
               title={`${coinData.name} Price (Last 7 Days)`}
@@ -142,7 +144,7 @@ const Coin = () => {
             />
           </div>
           </div>
-        </div>
+        </>
       )}
     </div>
     </div>

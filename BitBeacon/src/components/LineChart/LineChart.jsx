@@ -10,7 +10,6 @@ import {
   CartesianGrid,
 } from 'recharts';
 
-// data: [ { time: "dd/mm", price: 12345.67 }, ... ]
 const CoinLineChart = ({ data, title = 'Price Chart', currency }) => {
   if (!data || data.length === 0) {
     return <p>No chart data available.</p>;
@@ -36,14 +35,33 @@ const CoinLineChart = ({ data, title = 'Price Chart', currency }) => {
             domain={['auto', 'auto']}
             tickFormatter={formatPrice}
           />
+
+          {/* FIXED TOOLTIP */}
           <Tooltip
             formatter={(value) => [formatPrice(value), 'Price']}
             labelFormatter={(label) => `Date: ${label}`}
+            contentStyle={{
+              backgroundColor: "#0f172a",   // dark box
+              border: "1px solid #334155",  // thin border (remove if unwanted)
+              borderRadius: "8px",
+              padding: "8px 12px",
+              color: "#f8fafc",
+            }}
+            itemStyle={{
+              color: "#f8fafc",
+              fontSize: "0.85rem",
+            }}
+            labelStyle={{
+              color: "#facc15", // yellow heading
+              fontWeight: 600,
+              marginBottom: 4,
+            }}
           />
+
           <Line
             type="monotone"
             dataKey="price"
-            stroke="#F2A900"    // BTC-ish yellow, change if you want
+            stroke="#F2A900"
             strokeWidth={2}
             dot={false}
           />

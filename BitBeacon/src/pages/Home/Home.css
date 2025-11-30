@@ -99,6 +99,64 @@
   background-size: cover;
 }
 
+.hero-animation
+{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.cryp-container
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+.etherium
+{
+    height: 32px;
+    width: 32px;
+    background: url(../../assets/etherium.png);
+    background-size: cover;
+    cursor: pointer;
+    transform: all 0.3s ease-in;
+
+}
+.tether
+{
+    height: 32px;
+    width: 32px;
+    background: url(../../assets/tether.png);
+    background-size: cover;
+    cursor: pointer;
+    transform: all 0.3s ease-in;
+
+}
+.binance
+{
+    height: 32px;
+    width: 32px;
+    background: url(../../assets/coins.png);
+    background-size: cover;
+    cursor: pointer;
+    transform: all 0.3s ease-in;
+
+}
+.xrp
+{
+    height: 32px;
+    width: 32px;
+    background: url(../../assets/XRP.png);
+    background-size: cover;
+    cursor: pointer;
+    transform: scale(1) 0.3s ease-in;
+
+}
+.tether:hover, .etherium:hover, .xrp:hover, .binance:hover
+{
+    scale: 1.2;
+}
+
 
 
 
@@ -112,8 +170,17 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 13.417vw;
+        margin-top: 18.417vw;
         margin-left: 0px;
+    }
+    .hero-animation
+    {
+        gap: 0px;
+    }
+    .cryp-container
+    {
+        justify-content: space-evenly;
+        width: 37.552vw;
     }
     .hero-box
     {
@@ -139,7 +206,7 @@
     }
     .yellow-heading
     {
-        font-size: 4.546vw;
+        font-size: 5.546vw;
     }
     .normal-heading
     {
@@ -155,14 +222,14 @@
     }
     .buttons
     {
-        margin-top: 3.906vw;
+        margin-top: 5.906vw;
         gap: 6.51vw;
     }
     .explore,.sign-in
     {
-        font-size: 1.902vw;
-        height: 5.906vw;
-        width: 17.719vw;
+        font-size: 2.302vw;
+        height: 7.906vw;
+        width: 19.719vw;
         border-radius: 1.642vw;
     }
     
@@ -188,6 +255,7 @@
     width: 31.042vw;
     background: url(./../../assets/aboutimg.png);
     background-size: cover;
+    
 }
 .about-description
 {
@@ -214,9 +282,16 @@
     font-size: 1.302vw;
     font-family: "Inter", sans-serif;
     margin-bottom: 1.563vw;
-        background-color: #353535;
+    background-color: #353535;
+    width: 400px;
+   
 
+}
 
+.detail-container
+{
+    background-color: #353535;
+    padding: 10px;
 }
 .learn-more
 {
@@ -254,10 +329,10 @@
     }
     .about-img
     {
-        width: 500px;
-        height: 500px;
+        width: 65.104vw;
+        height: 65.104vw;
         padding: 0;
-        scale: 0.8;
+        scale: 0.9;
         margin: 0;
         justify-content: center;
         align-items: center;
@@ -274,14 +349,15 @@
     {
         text-align: center;
         font-size: 5.025vw;
-        padding-left:3.255vw ;
-        padding-right:3.255vw ;
+        
     }
     .detail-og
     {
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: #353535;
+
     }
     .detail-container > *
     {
@@ -289,9 +365,14 @@
         justify-content: center;
         align-items: center;
         font-size: 2.902vw;
-        width: 400px;
         
+        background-color: #353535;
 
+
+    }
+    .about-details-1,.about-details-2,.about-details-3
+    {
+        width: 55.646vw;
     }
     .learn-more-container
     {
@@ -355,10 +436,7 @@
     background-size: cover;
     transition: filter 0.3s ease;
 }
-.bullet-1:hover .tick
-{
-filter: invert(79%) sepia(25%) saturate(1304%) hue-rotate(129deg) brightness(96%) contrast(96%);
-}
+
 .heading-1
 {
     font-size: 1.458vw;

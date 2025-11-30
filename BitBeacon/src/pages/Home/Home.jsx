@@ -1,5 +1,6 @@
 import React from 'react'
 import './Home.css'
+import Footer from '../../components/Footer/Footer'
 
 function Home() {
   return (
@@ -14,12 +15,18 @@ function Home() {
             <div className="explore">EXPLORE</div>
 
             </a>
-            <div className="sign-in">SIGN-IN</div>
+            <div className="sign-in">SERVICES</div>
         </div>
       </div>
 
       <div className="hero-animation">
         <div className="btc-img"></div>
+        <div className="cryp-container">
+          <div className="etherium"></div>
+          <div className="tether"></div>
+          <div className="binance"></div>
+          <div className="xrp"></div>
+        </div>
       </div>
     </div>
 
@@ -30,9 +37,9 @@ function Home() {
 
           <div className="detail-og">
           <div className="detail-container">
-            <div className="about-details-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi commodi pariatur non architecto accusamus quia ipsa voluptatum eius corrupti assumenda. Voluptatum ullam ea dolor, aperiam sit excepturi ipsam obcaecati aut.</div>
-            <div className="about-details-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi commodi pariatur non architecto accusamus quia ipsa voluptatum eius corrupti assumenda. Voluptatum ullam ea dolor, aperiam sit excepturi ipsam obcaecati aut.</div>
-            <div className="about-details-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi commodi pariatur non architecto accusamus quia ipsa voluptatum eius corrupti assumenda. Voluptatum ullam ea dolor, aperiam sit excepturi ipsam obcaecati aut.</div>
+            <div className="about-details-1">Hey I am Ayushman, a frontend developer. This website is made as a personal project to showcase my frontend skills and learn about API fetching. API used here is of CoinGecko, and it is made in React.js and deployed in Netlify..</div>
+            <div className="about-details-2">Our platform uses reliable and accurate data sourced from the CoinGecko API, ensuring transparency and consistency across all metrics.</div>
+            <div className="about-details-3">Whether you're a trader, investor, or crypto enthusiast, our goal is to give you a dependable platform for monitoring the global crypto market.</div>
           </div>
           </div>
           
@@ -50,27 +57,27 @@ function Home() {
                 <div className="bullet-1">
                     <div className="tick"></div>
                     <div className="body-1">
-                        <div className="heading-1">Research</div>
+                        <div className="heading-1">Foundation</div>
                         <div className="desc-1">October 2025</div>
-                        <div className="desc-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum sed nibh sit amet accumsan. Suspendisse posuere congue ante quis fringilla.</div>
+                        <div className="desc-2">We begin by building the core platform, including live cryptocurrency price tracking, detailed coin pages, and interactive historical charts. The goal of this phase is to establish a solid, reliable base for users to access real-time market data.</div>
                     </div>
                 </div>
 
                 <div className="bullet-1">
                     <div className="tick"></div>
                     <div className="body-1">
-                        <div className="heading-1">Research</div>
-                        <div className="desc-1">October 2025</div>
-                        <div className="desc-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum sed nibh sit amet accumsan. Suspendisse posuere congue ante quis fringilla.</div>
+                        <div className="heading-1">Enhancements</div>
+                        <div className="desc-1">November 2025</div>
+                        <div className="desc-2">Next, we improve the overall user experience with features like an integrated search bar, smoother UI design, mobile responsiveness. Additional chart time ranges are also introduced to give users more control over how they view market trends.</div>
                     </div>
                 </div>
 
                 <div className="bullet-1">
                     <div className="tick"></div>
                     <div className="body-1">
-                        <div className="heading-1">Research</div>
-                        <div className="desc-1">October 2025</div>
-                        <div className="desc-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum sed nibh sit amet accumsan. Suspendisse posuere congue ante quis fringilla.</div>
+                        <div className="heading-1">Advanced Features</div>
+                        <div className="desc-1">November 2025</div>
+                        <div className="desc-2">In the final phase, the platform becomes more personalized and powerful. Users will be able to create watchlists, set price alerts, and view real-time updates through WebSockets. Portfolio tracking tools will also be added to help users monitor their investments more effectively.</div>
                     </div>
                 </div>
                 </div>
@@ -82,6 +89,7 @@ function Home() {
 
 
             </div>
+
     </>
   )
 }

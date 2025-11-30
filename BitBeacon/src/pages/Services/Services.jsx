@@ -33,12 +33,14 @@ function Services() {
 
   return (
     <>
-      <div className="service-heading">Where Crypto Moves, You Move</div>
+      <div className="service-heading-box">
+      <div className="service-heading">Track the Crypto Market in Real Time</div>
+      </div>
 
       <div className="serv-box">
         <div className="service-desc">
-          Stay updated with lightning-fast crypto data, live charts, and market
-          insights—everything you need to navigate the digital finance world.
+          Stay updated with lightning-fast crypto data, live charts, click on a coin after searching it to learn more about it.
+          
         </div>
       </div>
 
@@ -51,7 +53,7 @@ function Services() {
               value={search}
               onChange={handleSearchChange}
             />
-            <button type="submit">SUBMIT</button>
+            <button type="submit">SEARCH</button>
           </div>
         </div>
       </form>

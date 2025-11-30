@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Coin from './pages/Coin/Coin'
 import Services from './pages/Services/Services'
-
+import Footer from './components/Footer/Footer'
 export default function App() {
   return (
     <>
@@ -15,6 +15,7 @@ export default function App() {
       <Route path='/services/:serviceId' element={<Coin/>}/>
 
     </Routes>
+    <Footer/>
     </>
   )
 }
